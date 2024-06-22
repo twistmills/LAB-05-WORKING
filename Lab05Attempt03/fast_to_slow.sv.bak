@@ -1,0 +1,60 @@
+module fast_to_slow(
+input  logic clock_1, // fast
+input  logic clock_2, // slow
+input  logic reset,
+input  logic[11:0] data_in, 
+output logic[11:0] sync_data_out
+
+);
+
+
+reg [11:0]data_reg[2:0];
+reg enable_reg[1:0];
+
+
+assign sync_data_out = data_reg[1];
+
+always_ff@(posedge clock_1 or negedge reset) begin
+
+	if (~reset) begin
+	
+		data_reg[0] <= 0;
+		data_reg[2] <= 0;
+		
+	end
+	else begin
+	data_reg[0] <= data_in;
+	
+	if(enable_reg[1]) data_reg[2] <= data_reg[0];
+	
+
+	
+	end
+
+end
+
+always_ff@(posedge clock_2 or negedge reset) begin
+
+	if (~reset) data_reg[1] <= 0;
+	else data_reg[1] <= data_reg[2];
+	 
+
+end
+
+always_ff@(negedge clock_1 or negedge reset) begin
+
+	if (~reset) begin
+		enable_reg[0] <= 0;
+		enable_reg[1] <= 0;
+
+	end 
+	
+	else begin
+		enable_reg[0] <= clock_2;
+		enable_reg[1] <= enable_reg[0];
+	
+	end
+
+end
+
+endmodule
