@@ -90,6 +90,7 @@ extern unsigned int size_song;
 // VARIABLES GLOBALES DE BOTONES
 unsigned char buttons_control1[12];
 unsigned char buttons_control2[12];
+unsigned char buttons_control3[12];
 
 void draw_button(int x, int y, int w, int h, int color, char * text,
 		char event_type, alt_video_display* display) {
@@ -134,11 +135,22 @@ void init_background() { // INIT BACKGROUND
 	draw_button(667, 512, 120, 35, 0xCC6600, "SAW", 0, SW_Frame);
 	draw_button(667, 554, 120, 35, 0xCC6600, "SQUARE", 1, SW_Frame);
 
+	draw_button(667, 80, 120, 35, 0xfaf205, "YELLOW", 0, SW_Frame);
+	draw_button(667, 117, 120, 35, 0x05faea, "BLUE", 0, SW_Frame);
+	draw_button(667, 154, 120, 35, 0xFF007F, "PINK", 0, SW_Frame);
+	draw_button(667, 191, 120, 35, 0x00ff31, "GREEN", 0, SW_Frame);
+
 }
 
 /*Read song from EPCS, and send it to the FIFO*/
 #define MAX_ADDRESS 524287
-#define NUMERO_DE_MUESTRAS 1000 // mini buffervoid send_audio_fifo(unsigned char *buf) {int i;for (i = 0; i < NUMERO_DE_MUESTRAS; i++) {while (audio_dac_fifo_full() == 1);audio_dac_wr_fifo( buf[i % size_song]);
+#define NUMERO_DE_MUESTRAS 1000 // mini buffer
+void send_audio_fifo(unsigned char *buf) {
+int i;
+for (i = 0; i < NUMERO_DE_MUESTRAS; i++) {
+while (audio_dac_fifo_full() == 1)
+;
+audio_dac_wr_fifo( buf[i % size_song]);
 }
 
 }
@@ -186,7 +198,26 @@ while (1) {
 event = mouse_pos(&x_mouse, &y_mouse);
 
 if (event == 1) {	//down event
+	//Logic for the colour buttons
+	if (x_mouse >= 667 && x_mouse <= (667 + 120) && y_mouse >= 191
+			&& y_mouse <= (191 + 35)) {
 
+		select_color(0);
+	}
+
+	else if (x_mouse >= 667 && x_mouse <= (667 + 120) && y_mouse >= 154
+			&& y_mouse <= (154 + 35)) {
+
+		select_color(1);
+	} else if (x_mouse >= 667 && x_mouse <= (667 + 120) && y_mouse >= 117
+			&& y_mouse <= (117 + 35)) {
+
+		select_color(2);
+	} else if (x_mouse >= 667 && x_mouse <= (667 + 120) && y_mouse >= 80
+			&& y_mouse <= (80 + 35)) {
+
+		select_color(3);
+	}
 
 	//Logic for the modulation buttons
 	if (x_mouse >= 667 && x_mouse <= (667 + 120) && y_mouse >= 252
@@ -354,6 +385,7 @@ audio_selector(1);
 //init selectors
 select_modulation(0);
 select_signal(3);
+select_color(0);
 
 //task song
 OSTaskCreateExt(task1,

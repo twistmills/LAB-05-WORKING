@@ -17,6 +17,7 @@ module DE1_SoC_QSYS (
 		input  wire        clk_clk,                                       //                             clk.clk
 		output wire        clk_25_out_clk,                                //                      clk_25_out.clk
 		output wire        clk_sdram_clk,                                 //                       clk_sdram.clk
+		output wire [7:0]  color_selector_export,                         //                  color_selector.export
 		output wire [31:0] div_freq_export,                               //                        div_freq.export
 		input  wire [3:0]  key_external_connection_export,                //         key_external_connection.export
 		input  wire [31:0] keyboard_keys_export,                          //                   keyboard_keys.export
@@ -44,18 +45,9 @@ module DE1_SoC_QSYS (
 		output wire        vga_alt_vip_itc_0_clocked_video_vid_h,         //                                .vid_h
 		output wire        vga_alt_vip_itc_0_clocked_video_vid_v,         //                                .vid_v
 		output wire        vga_vga_clk_clk,                                //                     vga_vga_clk.clk
-		
-		// OUR STUFF
-		// DDS_OUTPUT
-		output wire [31:0] dds_OUTPUT, 
-		 
-		 // LFSR_IMPUT
-		input wire [31:0] lfsr_INPUT,
-		
-		// INTERRUPT INPUT
-		input wire lfsr_CLOCK
-		
-		
+		output wire [31:0] dds_OUTPUT,
+		input wire  [31:0] lfsr_INPUT,
+		input wire         lfsr_CLOCK
 	);
 
 	wire         pll_outclk0_clk;                                           // pll:outclk_0 -> [audio:clk_clk, irq_synchronizer:receiver_clk, mm_interconnect_0:pll_outclk0_clk, rst_controller:clk, sdram:clk, vga:nios_clk_clk]
@@ -177,6 +169,11 @@ module DE1_SoC_QSYS (
 	wire   [1:0] mm_interconnect_0_lfsr_clk_interrupt_gen_s1_address;       // mm_interconnect_0:lfsr_clk_interrupt_gen_s1_address -> lfsr_clk_interrupt_gen:address
 	wire         mm_interconnect_0_lfsr_clk_interrupt_gen_s1_write;         // mm_interconnect_0:lfsr_clk_interrupt_gen_s1_write -> lfsr_clk_interrupt_gen:write_n
 	wire  [31:0] mm_interconnect_0_lfsr_clk_interrupt_gen_s1_writedata;     // mm_interconnect_0:lfsr_clk_interrupt_gen_s1_writedata -> lfsr_clk_interrupt_gen:writedata
+	wire         mm_interconnect_0_color_selector_s1_chipselect;            // mm_interconnect_0:color_selector_s1_chipselect -> color_selector:chipselect
+	wire  [31:0] mm_interconnect_0_color_selector_s1_readdata;              // color_selector:readdata -> mm_interconnect_0:color_selector_s1_readdata
+	wire   [1:0] mm_interconnect_0_color_selector_s1_address;               // mm_interconnect_0:color_selector_s1_address -> color_selector:address
+	wire         mm_interconnect_0_color_selector_s1_write;                 // mm_interconnect_0:color_selector_s1_write -> color_selector:write_n
+	wire  [31:0] mm_interconnect_0_color_selector_s1_writedata;             // mm_interconnect_0:color_selector_s1_writedata -> color_selector:writedata
 	wire  [31:0] mm_interconnect_0_vga_to_nios_2_datamaster_readdata;       // vga:to_nios_2_datamaster_readdata -> mm_interconnect_0:vga_to_nios_2_datamaster_readdata
 	wire   [4:0] mm_interconnect_0_vga_to_nios_2_datamaster_address;        // mm_interconnect_0:vga_to_nios_2_datamaster_address -> vga:to_nios_2_datamaster_address
 	wire         mm_interconnect_0_vga_to_nios_2_datamaster_read;           // mm_interconnect_0:vga_to_nios_2_datamaster_read -> vga:to_nios_2_datamaster_read
@@ -200,7 +197,7 @@ module DE1_SoC_QSYS (
 	wire         irq_mapper_receiver0_irq;                                  // irq_synchronizer:sender_irq -> irq_mapper:receiver0_irq
 	wire   [0:0] irq_synchronizer_receiver_irq;                             // vga:alt_vip_vfr_0_interrupt_sender_irq -> irq_synchronizer:receiver_irq
 	wire         rst_controller_reset_out_reset;                            // rst_controller:reset_out -> [audio:reset_reset_n, irq_synchronizer:receiver_reset, mm_interconnect_0:audio_reset_reset_bridge_in_reset_reset, mm_interconnect_0:vga_nios_clk_reset_reset_bridge_in_reset_reset, sdram:reset_n]
-	wire         rst_controller_001_reset_out_reset;                        // rst_controller_001:reset_out -> [audio_sel:reset_n, dds_increment:reset_n, div_freq:reset_n, jtag_uart:rst_n, key:reset_n, lfsr_clk_interrupt_gen:reset_n, lfsr_val:reset_n, mm_interconnect_0:jtag_uart_reset_reset_bridge_in_reset_reset, modulation_selector:reset_n, signal_selector:reset_n, sysid_qsys:reset_n, timer:reset_n]
+	wire         rst_controller_001_reset_out_reset;                        // rst_controller_001:reset_out -> [audio_sel:reset_n, color_selector:reset_n, dds_increment:reset_n, div_freq:reset_n, jtag_uart:rst_n, key:reset_n, lfsr_clk_interrupt_gen:reset_n, lfsr_val:reset_n, mm_interconnect_0:jtag_uart_reset_reset_bridge_in_reset_reset, modulation_selector:reset_n, signal_selector:reset_n, sysid_qsys:reset_n, timer:reset_n]
 	wire         rst_controller_002_reset_out_reset;                        // rst_controller_002:reset_out -> [cpu:reset_n, irq_mapper:reset, irq_synchronizer:sender_reset, mm_interconnect_0:cpu_reset_n_reset_bridge_in_reset_reset, rst_translator:in_reset]
 	wire         rst_controller_002_reset_out_reset_req;                    // rst_controller_002:reset_req -> [cpu:reset_req, rst_translator:reset_req_in]
 	wire         cpu_jtag_debug_module_reset_reset;                         // cpu:jtag_debug_module_resetrequest -> rst_controller_002:reset_in1
@@ -266,6 +263,17 @@ module DE1_SoC_QSYS (
 		.chipselect (mm_interconnect_0_audio_sel_s1_chipselect), //                    .chipselect
 		.readdata   (mm_interconnect_0_audio_sel_s1_readdata),   //                    .readdata
 		.out_port   (audio_sel_export)                           // external_connection.export
+	);
+
+	DE1_SoC_QSYS_color_selector color_selector (
+		.clk        (clk_clk),                                        //                 clk.clk
+		.reset_n    (~rst_controller_001_reset_out_reset),            //               reset.reset_n
+		.address    (mm_interconnect_0_color_selector_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_color_selector_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_color_selector_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_color_selector_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_color_selector_s1_readdata),   //                    .readdata
+		.out_port   (color_selector_export)                           // external_connection.export
 	);
 
 	DE1_SoC_QSYS_cpu cpu (
@@ -425,7 +433,7 @@ module DE1_SoC_QSYS (
 		.zs_we_n        (sdram_wire_we_n)                           //      .export
 	);
 
-	DE1_SoC_QSYS_signal_selector signal_selector (
+	DE1_SoC_QSYS_color_selector signal_selector (
 		.clk        (clk_clk),                                         //                 clk.clk
 		.reset_n    (~rst_controller_001_reset_out_reset),             //               reset.reset_n
 		.address    (mm_interconnect_0_signal_selector_s1_address),    //                  s1.address
@@ -555,6 +563,11 @@ module DE1_SoC_QSYS (
 		.audio_sel_s1_readdata                           (mm_interconnect_0_audio_sel_s1_readdata),                   //                                          .readdata
 		.audio_sel_s1_writedata                          (mm_interconnect_0_audio_sel_s1_writedata),                  //                                          .writedata
 		.audio_sel_s1_chipselect                         (mm_interconnect_0_audio_sel_s1_chipselect),                 //                                          .chipselect
+		.color_selector_s1_address                       (mm_interconnect_0_color_selector_s1_address),               //                         color_selector_s1.address
+		.color_selector_s1_write                         (mm_interconnect_0_color_selector_s1_write),                 //                                          .write
+		.color_selector_s1_readdata                      (mm_interconnect_0_color_selector_s1_readdata),              //                                          .readdata
+		.color_selector_s1_writedata                     (mm_interconnect_0_color_selector_s1_writedata),             //                                          .writedata
+		.color_selector_s1_chipselect                    (mm_interconnect_0_color_selector_s1_chipselect),            //                                          .chipselect
 		.cpu_jtag_debug_module_address                   (mm_interconnect_0_cpu_jtag_debug_module_address),           //                     cpu_jtag_debug_module.address
 		.cpu_jtag_debug_module_write                     (mm_interconnect_0_cpu_jtag_debug_module_write),             //                                          .write
 		.cpu_jtag_debug_module_read                      (mm_interconnect_0_cpu_jtag_debug_module_read),              //                                          .read

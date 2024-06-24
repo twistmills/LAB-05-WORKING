@@ -1,5 +1,5 @@
 Flow report for dds_and_nios_lab
-Fri Jun 21 15:18:32 2024
+Mon Jun 24 13:44:47 2024
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Jun 21 15:18:09 2024       ;
+; Flow Status                     ; Successful - Mon Jun 24 13:44:33 2024       ;
 ; Quartus Prime Version           ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
 ; Revision Name                   ; dds_and_nios_lab                            ;
 ; Top-level Entity Name           ; dds_and_nios_lab                            ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 5,118 / 32,070 ( 16 % )                     ;
-; Total registers                 ; 8036                                        ;
+; Logic utilization (in ALMs)     ; 5,139 / 32,070 ( 16 % )                     ;
+; Total registers                 ; 8021                                        ;
 ; Total pins                      ; 241 / 457 ( 53 % )                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 159,128 / 4,065,280 ( 4 % )                 ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/21/2024 15:12:13 ;
+; Start date & time ; 06/24/2024 13:40:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; dds_and_nios_lab    ;
 +-------------------+---------------------+
@@ -81,7 +81,7 @@ agreement for further details.
 +---------------------------------------------------+----------------------------------------------------------------+--------------------+--------------+------------+
 ; ALLOW_POWER_UP_DONT_CARE                          ; Off                                                            ; On                 ; --           ; --         ;
 ; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS ; Care                                                           ; Auto               ; --           ; --         ;
-; COMPILER_SIGNATURE_ID                             ; 79846616326282.171900793349384                                 ; --                 ; --           ; --         ;
+; COMPILER_SIGNATURE_ID                             ; 27214213953951.171926161134560                                 ; --                 ; --           ; --         ;
 ; ENABLE_IP_DEBUG                                   ; On                                                             ; Off                ; --           ; --         ;
 ; ENABLE_SIGNALTAP                                  ; On                                                             ; --                 ; --           ; --         ;
 ; EXTRACT_VERILOG_STATE_MACHINES                    ; Off                                                            ; On                 ; --           ; --         ;
@@ -108,7 +108,7 @@ agreement for further details.
 ; SAVE_DISK_SPACE                                   ; Off                                                            ; On                 ; --           ; --         ;
 ; SLD_FILE                                          ; DE1_SoC_QSYS/synthesis/DE1_SoC_QSYS.regmap                     ; --                 ; --           ; --         ;
 ; SLD_FILE                                          ; DE1_SoC_QSYS/synthesis/DE1_SoC_QSYS.debuginfo                  ; --                 ; --           ; --         ;
-; SLD_INFO                                          ; QSYS_NAME DE1_SoC_QSYS HAS_SOPCINFO 1 GENERATION_ID 1719003579 ; --                 ; DE1_SoC_QSYS ; --         ;
+; SLD_INFO                                          ; QSYS_NAME DE1_SoC_QSYS HAS_SOPCINFO 1 GENERATION_ID 1719259059 ; --                 ; DE1_SoC_QSYS ; --         ;
 ; SOPCINFO_FILE                                     ; DE1_SoC_QSYS/synthesis/../../DE1_SoC_QSYS.sopcinfo             ; --                 ; --           ; --         ;
 ; SYNTHESIS_ONLY_QIP                                ; On                                                             ; --                 ; --           ; --         ;
 ; SYNTH_PROTECT_SDC_CONSTRAINT                      ; On                                                             ; Off                ; --           ; --         ;
@@ -125,11 +125,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:10     ; 2.0                     ; 5305 MB             ; 00:01:18                           ;
-; Fitter                    ; 00:04:24     ; 1.2                     ; 7380 MB             ; 00:04:41                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 4951 MB             ; 00:00:09                           ;
-; TimeQuest Timing Analyzer ; 00:00:22     ; 2.4                     ; 5527 MB             ; 00:00:31                           ;
-; Total                     ; 00:06:06     ; --                      ; --                  ; 00:06:39                           ;
+; Analysis & Synthesis      ; 00:00:44     ; 1.9                     ; 5329 MB             ; 00:00:45                           ;
+; Fitter                    ; 00:03:23     ; 1.2                     ; 7776 MB             ; 00:03:54                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4949 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:13     ; 2.6                     ; 5553 MB             ; 00:00:20                           ;
+; Total                     ; 00:04:27     ; --                      ; --                  ; 00:05:04                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -138,10 +138,10 @@ agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-C675HTKB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; LAPTOP-C675HTKB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; LAPTOP-C675HTKB  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-C675HTKB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; Ryan-Desktop     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; Ryan-Desktop     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; Ryan-Desktop     ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; Ryan-Desktop     ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

@@ -39,7 +39,8 @@ module DE1_SoC_QSYS (
 	vga_alt_vip_itc_0_clocked_video_vid_f,
 	vga_alt_vip_itc_0_clocked_video_vid_h,
 	vga_alt_vip_itc_0_clocked_video_vid_v,
-	vga_vga_clk_clk);	
+	vga_vga_clk_clk,
+	color_selector_export);	
 
 	output	[31:0]	audio2fifo_0_data_divfrec_export;
 	input		audio2fifo_0_empty_export;
@@ -81,4 +82,5 @@ module DE1_SoC_QSYS (
 	output		vga_alt_vip_itc_0_clocked_video_vid_h;
 	output		vga_alt_vip_itc_0_clocked_video_vid_v;
 	output		vga_vga_clk_clk;
+	output	[7:0]	color_selector_export;
 endmodule

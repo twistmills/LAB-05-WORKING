@@ -10,7 +10,7 @@
 #include "system.h"
 #include <io.h>
 
-/*Esta función pone en zeros entradas al FIFO, carga la muestra y genera un pulso de reloj WRCLK,
+/*Esta funciï¿½n pone en zeros entradas al FIFO, carga la muestra y genera un pulso de reloj WRCLK,
  * y vuelve a poner en zeros los puertos de entrada al fifo */
 int audio_dac_wr_fifo(unsigned char muestra) {
 // poner en zeros
@@ -38,21 +38,21 @@ int audio_dac_wr_fifo(unsigned char muestra) {
 	return 0;
 }
 
-/*Esta función pone stop en 1, detener la canción*/
+/*Esta funciï¿½n pone stop en 1, detener la canciï¿½n*/
 int stop_wav() {
 	IOWR(AUDIO_OUT_STOP_BASE, 0, 1);
 	IOWR(AUDIO_OUT_STOP_BASE, 0, 0);
 	IOWR(AUDIO_OUT_PAUSE_BASE, 0, 1);
 	return 0;
 }
-/*Esta función pone stop y pause en 0*/
+/*Esta funciï¿½n pone stop y pause en 0*/
 int play_wav() {
 	IOWR(AUDIO_OUT_STOP_BASE, 0, 0);
 	IOWR(AUDIO_OUT_PAUSE_BASE, 0, 0);
 	return 0;
 }
 
-/*Esta función pone pause en 1, para pausar el archivo de audio*/
+/*Esta funciï¿½n pone pause en 1, para pausar el archivo de audio*/
 int pause_wav() {
 	IOWR(AUDIO_OUT_PAUSE_BASE, 0, 1);
 	return 0;
@@ -100,6 +100,10 @@ void select_modulation(unsigned char modulator) {
 
 void select_signal(unsigned char signal) {
 	IOWR(SIGNAL_SELECTOR_BASE, 0, signal);
+}
+
+void select_color(unsigned char colour) {
+	IOWR(COLOR_SELECTOR_BASE, 0, colour);
 }
 
 void audio_selector(unsigned char audio_sel) {
