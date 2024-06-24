@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Jun 24 12:00:21 2024
+Fitter Status : Successful - Mon Jun 24 14:42:17 2024
 Quartus Prime Version : 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 Revision Name : dds_and_nios_lab
 Top-level Entity Name : dds_and_nios_lab
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 5,118 / 32,070 ( 16 % )
-Total registers : 8036
+Logic utilization (in ALMs) : 5,161 / 32,070 ( 16 % )
+Total registers : 7983
 Total pins : 241 / 457 ( 53 % )
 Total virtual pins : 0
 Total block memory bits : 159,128 / 4,065,280 ( 4 % )

@@ -23,6 +23,8 @@ void select_modulation(unsigned char modulator);
 void select_signal(unsigned char signal);
 //audio selector
 void audio_selector(unsigned char audio_sel);
+//audio selector
+void select_color(unsigned char colour);
 //Audio Synthesis
 int set_note(int freq);
 //read keyboard

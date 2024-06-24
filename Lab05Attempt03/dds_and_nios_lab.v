@@ -331,8 +331,10 @@ DE1_SoC_QSYS U0(
 		 .lfsr_INPUT({31'b0, LFSR_output[0]}),
 		 
 		 // INTERRUPT INPUT
-       .lfsr_CLOCK(CLOCK_1Hz)
-		 
+       .lfsr_CLOCK(CLOCK_1Hz),
+
+	    // Graph colour selector
+		.color_selector_export(color_selector)
 		 
 	);
 	
@@ -442,7 +444,21 @@ end
 
 
 
+// Select the Waveform colour
+wire [7:0] color_selector;
+reg [23:0] waveform_color;
 
+always @(*) begin
+
+	case(color_selector[1:0])
+		2'b00 : waveform_color = 24'h00ff30;	// default green
+		2'b01 : waveform_color = 24'hFF007F;	// // Hot pink
+		2'b10 : waveform_color = 24'h05faea; // Light Blue
+		2'b11 : waveform_color = 24'hfaf205;	// Yellow
+	endcase
+	
+	
+end 
 
 
 
@@ -597,7 +613,7 @@ plot_graph plot_graph1
 	.data_graph({~actual_selected_modulation[11],actual_selected_modulation[10:4]}) ,	// input [size_data-1:0] data_graph_sig
 	.data_graph_rdy(sampler) ,	// input  data_graph_rdy_sig
 	.display_clk(video_clk_40Mhz) ,	// input  display_clk_sig
-	.color_graph(24'h00ff30) ,	// input [numberRGB-1:0] color_graph_sig
+	.color_graph(waveform_color) ,	// input [numberRGB-1:0] color_graph_sig
 	.scroll_en(graph_enable_scroll) ,	// input  scroll_en_sig
 	.Pos_X(11'd0) ,	// input [Xcount-1:0] Pos_X_sig
 	.Pos_Y(11'd266) ,	// input [Ycount-1:0] Pos_Y_sig
@@ -620,7 +636,7 @@ plot_graph plot_graph2
 	.data_graph({~actual_selected_signal[11],actual_selected_signal[10:4]}) ,	// input [size_data-1:0] data_graph_sig
 	.data_graph_rdy(sampler) ,	// input  data_graph_rdy_sig
 	.display_clk(video_clk_40Mhz) ,	// input  display_clk_sig
-	.color_graph(24'h00ff30) ,	// input [numberRGB-1:0] color_graph_sig
+	.color_graph(waveform_color) ,	// input [numberRGB-1:0] color_graph_sig
 	.scroll_en(graph_enable_scroll) ,	// input  scroll_en_sig
 	.Pos_X(11'd0) ,	// input [Xcount-1:0] Pos_X_sig
 	.Pos_Y(11'd438) ,	// input [Ycount-1:0] Pos_Y_sig

@@ -38,6 +38,7 @@
 		.vga_alt_vip_itc_0_clocked_video_vid_f         (<connected-to-vga_alt_vip_itc_0_clocked_video_vid_f>),         //                                .vid_f
 		.vga_alt_vip_itc_0_clocked_video_vid_h         (<connected-to-vga_alt_vip_itc_0_clocked_video_vid_h>),         //                                .vid_h
 		.vga_alt_vip_itc_0_clocked_video_vid_v         (<connected-to-vga_alt_vip_itc_0_clocked_video_vid_v>),         //                                .vid_v
-		.vga_vga_clk_clk                               (<connected-to-vga_vga_clk_clk>)                                //                     vga_vga_clk.clk
+		.vga_vga_clk_clk                               (<connected-to-vga_vga_clk_clk>),                               //                     vga_vga_clk.clk
+		.color_selector_export                         (<connected-to-color_selector_export>)                          //                  color_selector.export
 	);
 
