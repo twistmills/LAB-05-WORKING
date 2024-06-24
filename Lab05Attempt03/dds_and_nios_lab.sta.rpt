@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for dds_and_nios_lab
-Fri Jun 21 15:18:32 2024
+Mon Jun 24 12:01:00 2024
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -103,16 +103,16 @@ agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 2.45        ;
+; Average used               ; 2.42        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  30.6%      ;
-;     Processor 3            ;  29.9%      ;
-;     Processor 4            ;  29.8%      ;
-;     Processor 5            ;  27.5%      ;
-;     Processor 6            ;  27.5%      ;
+;     Processor 2            ;  30.0%      ;
+;     Processor 3            ;  29.3%      ;
+;     Processor 4            ;  29.1%      ;
+;     Processor 5            ;  26.9%      ;
+;     Processor 6            ;  26.9%      ;
 +----------------------------+-------------+
 
 
@@ -121,12 +121,12 @@ agreement for further details.
 +--------------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                                  ; Status ; Read at                  ;
 +--------------------------------------------------------------------------------+--------+--------------------------+
-; DE1_SoC_QSYS/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Fri Jun 21 15:18:14 2024 ;
-; DE1_SoC_QSYS/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Fri Jun 21 15:18:14 2024 ;
-; DE1_SoC_QSYS/synthesis/submodules/alt_vipvfr131_vfr.sdc                        ; OK     ; Fri Jun 21 15:18:14 2024 ;
-; DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc                        ; OK     ; Fri Jun 21 15:18:14 2024 ;
-; DE1_SoC_QSYS/synthesis/submodules/DE1_SoC_QSYS_cpu.sdc                         ; OK     ; Fri Jun 21 15:18:14 2024 ;
-; dds_and_nios_lab.sdc                                                           ; OK     ; Fri Jun 21 15:18:14 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Mon Jun 24 12:00:42 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Mon Jun 24 12:00:42 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/alt_vipvfr131_vfr.sdc                        ; OK     ; Mon Jun 24 12:00:42 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc                        ; OK     ; Mon Jun 24 12:00:42 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/DE1_SoC_QSYS_cpu.sdc                         ; OK     ; Mon Jun 24 12:00:42 2024 ;
+; dds_and_nios_lab.sdc                                                           ; OK     ; Mon Jun 24 12:00:42 2024 ;
 +--------------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -2135,7 +2135,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
-    Info: Processing started: Fri Jun 21 15:18:10 2024
+    Info: Processing started: Mon Jun 24 12:00:38 2024
 Info: Command: quartus_sta dds_and_nios_lab -c dds_and_nios_lab
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -2200,297 +2200,297 @@ Info (332104): Reading SDC File: 'DE1_SoC_QSYS/synthesis/submodules/altera_avalo
 Info (332104): Reading SDC File: 'DE1_SoC_QSYS/synthesis/submodules/alt_vipvfr131_vfr.sdc'
 Info (332104): Reading SDC File: 'DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc'
 Info: Adding SDC requirements for alt_vipitc131_IS2Vid instance U0|vga|alt_vip_itc_0
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(64): U0|vga|alt_vip_itc_0|mode_banks|u_calculate_mode_dynamic|* could not be matched with a net File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 64
-Warning (332049): Ignored set_multicycle_path at alt_vipitc131_cvo.sdc(64): Argument <through> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 64
-    Info (332050): set_multicycle_path -setup -start -through [get_nets "${inst}|mode_banks|u_calculate_mode_dynamic|*"] 2 File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 64
-Warning (332049): Ignored set_multicycle_path at alt_vipitc131_cvo.sdc(65): Argument <through> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 65
-    Info (332050): set_multicycle_path -hold -start -through [get_nets "${inst}|mode_banks|u_calculate_mode_dynamic|*"] 1 File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 65
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(68): *alt_vipitc131_IS2Vid:*|is_mode_match[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 68
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(68): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 68
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_mode_match[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 68
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(69): *alt_vipitc131_IS2Vid:*|is_interlaced[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 69
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(69): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 69
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_interlaced[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 69
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(70): *alt_vipitc131_IS2Vid:*|is_serial_output[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 70
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(70): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 70
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_serial_output[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 70
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(71): *alt_vipitc131_IS2Vid:*|is_sample_count[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 71
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(71): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 71
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_sample_count[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 71
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(72): *alt_vipitc131_IS2Vid:*|is_line_count_f0[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 72
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(72): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 72
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_line_count_f0[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 72
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(73): *alt_vipitc131_IS2Vid:*|is_line_count_f1[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 73
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(73): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 73
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_line_count_f1[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 73
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(74): *alt_vipitc131_IS2Vid:*|is_h_front_porch[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 74
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(74): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 74
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_h_front_porch[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 74
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(75): *alt_vipitc131_IS2Vid:*|is_h_sync_length[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 75
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(75): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 75
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_h_sync_length[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 75
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(76): *alt_vipitc131_IS2Vid:*|is_h_blank[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 76
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(76): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 76
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_h_blank[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 76
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(77): *alt_vipitc131_IS2Vid:*|is_v_front_porch[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 77
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(77): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 77
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v_front_porch[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 77
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(78): *alt_vipitc131_IS2Vid:*|is_v_sync_length[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 78
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(78): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 78
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v_sync_length[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 78
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(79): *alt_vipitc131_IS2Vid:*|is_v_blank[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 79
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(79): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 79
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v_blank[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 79
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(80): *alt_vipitc131_IS2Vid:*|is_v1_front_porch[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 80
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(80): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 80
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_front_porch[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 80
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(81): *alt_vipitc131_IS2Vid:*|is_v1_sync_length[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 81
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(81): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 81
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_sync_length[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 81
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(82): *alt_vipitc131_IS2Vid:*|is_v1_blank[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 82
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(82): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 82
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_blank[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 82
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(83): *alt_vipitc131_IS2Vid:*|is_ap_line[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 83
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(83): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 83
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_ap_line[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 83
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(84): *alt_vipitc131_IS2Vid:*|is_v1_rising_edge[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 84
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(84): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 84
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_rising_edge[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 84
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(85): *alt_vipitc131_IS2Vid:*|is_f_rising_edge[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 85
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(85): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 85
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_f_rising_edge[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 85
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(86): *alt_vipitc131_IS2Vid:*|is_f_falling_edge[*][*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 86
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(86): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 86
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_f_falling_edge[*][*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 86
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(87): *alt_vipitc131_IS2Vid:*|is_standard[*][* could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 87
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(87): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 87
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_standard[*][*}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 87
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(88): *alt_vipitc131_IS2Vid:*|is_sof_sample[*][* could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 88
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(88): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 88
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_sof_sample[*][*}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 88
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(89): *alt_vipitc131_IS2Vid:*|is_sof_subsample[*][* could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 89
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(89): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 89
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_sof_subsample[*][*}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 89
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(90): *alt_vipitc131_IS2Vid:*|is_sof_line[*][* could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 90
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(90): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 90
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_sof_line[*][*}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 90
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(91): *alt_vipitc131_IS2Vid:*|is_vcoclk_divider_value[*][* could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 91
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(91): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 91
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_vcoclk_divider_value[*][*}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 91
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(92): *alt_vipitc131_IS2Vid:*|is_anc_line[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 92
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(92): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 92
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_anc_line[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 92
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(93): *alt_vipitc131_IS2Vid:*|is_v1_anc_line[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 93
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(93): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 93
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_anc_line[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 93
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(94): *alt_vipitc131_IS2Vid:*|is_valid_mode[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 94
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(94): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 94
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_valid_mode[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 94
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(95): *alt_vipitc131_IS2Vid:*|dirty_mode[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 95
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(95): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 95
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|dirty_mode[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 95
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(98): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:clear_underflow_sticky_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 98
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(98): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 98
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:clear_underflow_sticky_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 98
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(99): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:enable_resync_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 99
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(99): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 99
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:enable_resync_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 99
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(101): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:genlocked_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 101
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(101): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 101
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:genlocked_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 101
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(102): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:genlock_enable_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 102
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(102): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 102
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:genlock_enable_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 102
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(103): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:underflow_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 103
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(103): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 103
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:underflow_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 103
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(104): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:av_waitrequest_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 104
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(104): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 104
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:av_waitrequest_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 104
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(105): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:av_write_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 105
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(105): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 105
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:av_write_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 105
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(106): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:mode_change_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 106
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(106): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 106
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:mode_change_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 106
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(107): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:sync_generation_generate.sof_cvi_locked_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 107
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(107): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 107
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:sync_generation_generate.sof_cvi_locked_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 107
-Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(108): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:sync_generation_generate.sof_cvi_sync|data_out_sync0[*] could not be matched with a keeper File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 108
-Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(108): Argument <to> is an empty collection File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 108
-    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:sync_generation_generate.sof_cvi_sync|data_out_sync0[*]}] File: C:/CPEN_311/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 108
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(64): U0|vga|alt_vip_itc_0|mode_banks|u_calculate_mode_dynamic|* could not be matched with a net File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 64
+Warning (332049): Ignored set_multicycle_path at alt_vipitc131_cvo.sdc(64): Argument <through> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 64
+    Info (332050): set_multicycle_path -setup -start -through [get_nets "${inst}|mode_banks|u_calculate_mode_dynamic|*"] 2 File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 64
+Warning (332049): Ignored set_multicycle_path at alt_vipitc131_cvo.sdc(65): Argument <through> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 65
+    Info (332050): set_multicycle_path -hold -start -through [get_nets "${inst}|mode_banks|u_calculate_mode_dynamic|*"] 1 File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 65
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(68): *alt_vipitc131_IS2Vid:*|is_mode_match[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 68
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(68): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 68
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_mode_match[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 68
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(69): *alt_vipitc131_IS2Vid:*|is_interlaced[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 69
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(69): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 69
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_interlaced[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 69
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(70): *alt_vipitc131_IS2Vid:*|is_serial_output[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 70
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(70): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 70
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_serial_output[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 70
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(71): *alt_vipitc131_IS2Vid:*|is_sample_count[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 71
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(71): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 71
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_sample_count[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 71
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(72): *alt_vipitc131_IS2Vid:*|is_line_count_f0[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 72
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(72): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 72
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_line_count_f0[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 72
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(73): *alt_vipitc131_IS2Vid:*|is_line_count_f1[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 73
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(73): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 73
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_line_count_f1[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 73
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(74): *alt_vipitc131_IS2Vid:*|is_h_front_porch[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 74
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(74): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 74
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_h_front_porch[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 74
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(75): *alt_vipitc131_IS2Vid:*|is_h_sync_length[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 75
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(75): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 75
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_h_sync_length[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 75
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(76): *alt_vipitc131_IS2Vid:*|is_h_blank[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 76
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(76): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 76
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_h_blank[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 76
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(77): *alt_vipitc131_IS2Vid:*|is_v_front_porch[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 77
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(77): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 77
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v_front_porch[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 77
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(78): *alt_vipitc131_IS2Vid:*|is_v_sync_length[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 78
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(78): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 78
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v_sync_length[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 78
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(79): *alt_vipitc131_IS2Vid:*|is_v_blank[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 79
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(79): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 79
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v_blank[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 79
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(80): *alt_vipitc131_IS2Vid:*|is_v1_front_porch[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 80
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(80): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 80
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_front_porch[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 80
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(81): *alt_vipitc131_IS2Vid:*|is_v1_sync_length[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 81
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(81): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 81
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_sync_length[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 81
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(82): *alt_vipitc131_IS2Vid:*|is_v1_blank[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 82
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(82): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 82
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_blank[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 82
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(83): *alt_vipitc131_IS2Vid:*|is_ap_line[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 83
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(83): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 83
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_ap_line[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 83
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(84): *alt_vipitc131_IS2Vid:*|is_v1_rising_edge[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 84
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(84): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 84
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_rising_edge[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 84
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(85): *alt_vipitc131_IS2Vid:*|is_f_rising_edge[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 85
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(85): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 85
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_f_rising_edge[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 85
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(86): *alt_vipitc131_IS2Vid:*|is_f_falling_edge[*][*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 86
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(86): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 86
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_f_falling_edge[*][*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 86
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(87): *alt_vipitc131_IS2Vid:*|is_standard[*][* could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 87
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(87): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 87
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_standard[*][*}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 87
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(88): *alt_vipitc131_IS2Vid:*|is_sof_sample[*][* could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 88
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(88): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 88
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_sof_sample[*][*}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 88
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(89): *alt_vipitc131_IS2Vid:*|is_sof_subsample[*][* could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 89
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(89): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 89
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_sof_subsample[*][*}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 89
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(90): *alt_vipitc131_IS2Vid:*|is_sof_line[*][* could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 90
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(90): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 90
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_sof_line[*][*}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 90
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(91): *alt_vipitc131_IS2Vid:*|is_vcoclk_divider_value[*][* could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 91
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(91): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 91
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_vcoclk_divider_value[*][*}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 91
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(92): *alt_vipitc131_IS2Vid:*|is_anc_line[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 92
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(92): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 92
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_anc_line[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 92
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(93): *alt_vipitc131_IS2Vid:*|is_v1_anc_line[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 93
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(93): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 93
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_v1_anc_line[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 93
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(94): *alt_vipitc131_IS2Vid:*|is_valid_mode[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 94
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(94): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 94
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|is_valid_mode[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 94
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(95): *alt_vipitc131_IS2Vid:*|dirty_mode[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 95
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(95): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 95
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|dirty_mode[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 95
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(98): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:clear_underflow_sticky_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 98
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(98): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 98
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:clear_underflow_sticky_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 98
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(99): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:enable_resync_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 99
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(99): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 99
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:enable_resync_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 99
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(101): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:genlocked_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 101
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(101): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 101
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:genlocked_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 101
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(102): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:genlock_enable_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 102
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(102): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 102
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:genlock_enable_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 102
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(103): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:underflow_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 103
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(103): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 103
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:underflow_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 103
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(104): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:av_waitrequest_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 104
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(104): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 104
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:av_waitrequest_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 104
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(105): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:av_write_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 105
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(105): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 105
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:av_write_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 105
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(106): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:mode_change_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 106
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(106): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 106
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_trigger_sync:mode_change_trigger_sync|alt_vipitc131_common_sync:toggle_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 106
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(107): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:sync_generation_generate.sof_cvi_locked_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 107
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(107): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 107
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:sync_generation_generate.sof_cvi_locked_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 107
+Warning (332174): Ignored filter at alt_vipitc131_cvo.sdc(108): *alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:sync_generation_generate.sof_cvi_sync|data_out_sync0[*] could not be matched with a keeper File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 108
+Warning (332049): Ignored set_false_path at alt_vipitc131_cvo.sdc(108): Argument <to> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 108
+    Info (332050): set_false_path -to [get_keepers {*alt_vipitc131_IS2Vid:*|alt_vipitc131_common_sync:sync_generation_generate.sof_cvi_sync|data_out_sync0[*]}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc Line: 108
 Info (332104): Reading SDC File: 'DE1_SoC_QSYS/synthesis/submodules/DE1_SoC_QSYS_cpu.sdc'
 Info (332104): Reading SDC File: 'dds_and_nios_lab.sdc'
 Warning (332043): Overwriting existing clock: altera_reserved_tck
-Warning (332174): Ignored filter at dds_and_nios_lab.sdc(21): *AudioDacDeltaStereo:AudioDacDeltaStereo_inst|frecGen:frecGen_inst|out_tmp* could not be matched with a register File: C:/CPEN_311/Lab05Attempt03/dds_and_nios_lab.sdc Line: 21
-Warning (332049): Ignored create_clock at dds_and_nios_lab.sdc(21): Argument <targets> is an empty collection File: C:/CPEN_311/Lab05Attempt03/dds_and_nios_lab.sdc Line: 21
-    Info (332050): create_clock -name freqgen_audio_dac  -period 1000 [get_registers {*AudioDacDeltaStereo:AudioDacDeltaStereo_inst|frecGen:frecGen_inst|out_tmp*}]  File: C:/CPEN_311/Lab05Attempt03/dds_and_nios_lab.sdc Line: 21
-Warning (332174): Ignored filter at dds_and_nios_lab.sdc(22): *frecGen:frecGen_plots|out_tmp* could not be matched with a register File: C:/CPEN_311/Lab05Attempt03/dds_and_nios_lab.sdc Line: 22
-Warning (332049): Ignored create_clock at dds_and_nios_lab.sdc(22): Argument <targets> is an empty collection File: C:/CPEN_311/Lab05Attempt03/dds_and_nios_lab.sdc Line: 22
-    Info (332050): create_clock -name freqgen_plots -period 1000 [get_registers {*frecGen:frecGen_plots|out_tmp*}] File: C:/CPEN_311/Lab05Attempt03/dds_and_nios_lab.sdc Line: 22
-Warning (332174): Ignored filter at sdc_scripts.tcl(10): freqgen_audio_dac could not be matched with a clock File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332174): Ignored filter at dds_and_nios_lab.sdc(21): *AudioDacDeltaStereo:AudioDacDeltaStereo_inst|frecGen:frecGen_inst|out_tmp* could not be matched with a register File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/dds_and_nios_lab.sdc Line: 21
+Warning (332049): Ignored create_clock at dds_and_nios_lab.sdc(21): Argument <targets> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/dds_and_nios_lab.sdc Line: 21
+    Info (332050): create_clock -name freqgen_audio_dac  -period 1000 [get_registers {*AudioDacDeltaStereo:AudioDacDeltaStereo_inst|frecGen:frecGen_inst|out_tmp*}]  File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/dds_and_nios_lab.sdc Line: 21
+Warning (332174): Ignored filter at dds_and_nios_lab.sdc(22): *frecGen:frecGen_plots|out_tmp* could not be matched with a register File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/dds_and_nios_lab.sdc Line: 22
+Warning (332049): Ignored create_clock at dds_and_nios_lab.sdc(22): Argument <targets> is an empty collection File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/dds_and_nios_lab.sdc Line: 22
+    Info (332050): create_clock -name freqgen_plots -period 1000 [get_registers {*frecGen:frecGen_plots|out_tmp*}] File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/dds_and_nios_lab.sdc Line: 22
+Warning (332174): Ignored filter at sdc_scripts.tcl(10): freqgen_audio_dac could not be matched with a clock File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
 Warning (332055): Command remove_from_collection failed
     Warning (332089): Positional argument collection_obj_2 with value freqgen_audio_dac could not match any element of the following types: ( clk )
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_max_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <from> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
-Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
+Warning (332049): Ignored set_min_delay at sdc_scripts.tcl(10): Argument <to> is not an object ID File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
     Info (332050): foreach_in_collection clockB  [remove_from_collection [get_clocks {*}] $clock_name] {
                set clock_count_debug_var [expr {$clock_count_debug_var + 1}]
                set_max_delay -from  $clock_name -to $clockB $max_delay
                set_max_delay -from $clockB -to  $clock_name $max_delay
                set_min_delay -from  $clock_name -to $clockB $min_delay
                set_min_delay -from $clockB -to  $clock_name $min_delay
-              } File: C:/CPEN_311/Lab05Attempt03/sdc_scripts.tcl Line: 10
+              } File: C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/sdc_scripts.tcl Line: 10
 Info: ==========================================================================
 Info: timid_ignore of freqgen_audio_dac  max_delay = 50 min_delay = -50 : Arranged 5 clocks
 Info: ==========================================================================
@@ -2788,9 +2788,9 @@ Info (332114): Report Metastability: Found 125 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 112 warnings
-    Info: Peak virtual memory: 5527 megabytes
-    Info: Processing ended: Fri Jun 21 15:18:32 2024
+    Info: Peak virtual memory: 5528 megabytes
+    Info: Processing ended: Mon Jun 24 12:01:00 2024
     Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Total CPU time (on all processors): 00:00:36
 
 

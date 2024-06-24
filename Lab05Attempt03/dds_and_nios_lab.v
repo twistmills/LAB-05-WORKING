@@ -407,9 +407,9 @@ wire [11:0] asyn_actual_selected_modulation;
  
 
 fast_to_slow fast_to_slow_inst(
-	.clock_1(CLOCK_50), // fast
-	.clock_2(sampler), // slow
-	.reset(1'b1),
+	.FAST_clk(CLOCK_50), // fast
+	.SLOW_clk(sampler), // slow
+	.reset(1'b0),
 	.data_in(asyn_actual_selected_modulation), 
 	.sync_data_out(actual_selected_modulation)
 );

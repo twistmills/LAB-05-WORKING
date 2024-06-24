@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/CPEN_311/Lab05Attempt03/") File("dds_and_nios_lab_time_limited.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/twist/OneDrive/Documents/GitHub/LAB-05-WORKING/Lab05Attempt03/") File("dds_and_nios_lab_time_limited.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
