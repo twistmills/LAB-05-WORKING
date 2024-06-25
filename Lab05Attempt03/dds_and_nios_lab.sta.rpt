@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for dds_and_nios_lab
-Mon Jun 24 14:42:42 2024
+Mon Jun 24 15:14:50 2024
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -103,18 +103,18 @@ agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 2.65        ;
+; Average used               ; 2.84        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  25.7%      ;
-;     Processor 3            ;  25.0%      ;
-;     Processor 4            ;  24.8%      ;
-;     Processor 5            ;  22.4%      ;
-;     Processor 6            ;  22.4%      ;
-;     Processor 7            ;  22.4%      ;
-;     Processor 8            ;  22.4%      ;
+;     Processor 2            ;  28.2%      ;
+;     Processor 3            ;  27.7%      ;
+;     Processor 4            ;  27.5%      ;
+;     Processor 5            ;  25.1%      ;
+;     Processor 6            ;  25.1%      ;
+;     Processor 7            ;  25.1%      ;
+;     Processor 8            ;  25.1%      ;
 +----------------------------+-------------+
 
 
@@ -123,12 +123,12 @@ agreement for further details.
 +--------------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                                  ; Status ; Read at                  ;
 +--------------------------------------------------------------------------------+--------+--------------------------+
-; DE1_SoC_QSYS/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Mon Jun 24 14:42:31 2024 ;
-; DE1_SoC_QSYS/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Mon Jun 24 14:42:31 2024 ;
-; DE1_SoC_QSYS/synthesis/submodules/alt_vipvfr131_vfr.sdc                        ; OK     ; Mon Jun 24 14:42:31 2024 ;
-; DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc                        ; OK     ; Mon Jun 24 14:42:31 2024 ;
-; DE1_SoC_QSYS/synthesis/submodules/DE1_SoC_QSYS_cpu.sdc                         ; OK     ; Mon Jun 24 14:42:31 2024 ;
-; dds_and_nios_lab.sdc                                                           ; OK     ; Mon Jun 24 14:42:31 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Mon Jun 24 15:14:38 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Mon Jun 24 15:14:38 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/alt_vipvfr131_vfr.sdc                        ; OK     ; Mon Jun 24 15:14:38 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/alt_vipitc131_cvo.sdc                        ; OK     ; Mon Jun 24 15:14:38 2024 ;
+; DE1_SoC_QSYS/synthesis/submodules/DE1_SoC_QSYS_cpu.sdc                         ; OK     ; Mon Jun 24 15:14:38 2024 ;
+; dds_and_nios_lab.sdc                                                           ; OK     ; Mon Jun 24 15:14:38 2024 ;
 +--------------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -159,14 +159,14 @@ agreement for further details.
 +------------+-----------------+--------------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                           ; Note ;
 +------------+-----------------+--------------------------------------------------------------------------------------+------+
-; 31.81 MHz  ; 31.81 MHz       ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ;      ;
-; 51.55 MHz  ; 51.55 MHz       ; altera_reserved_tck                                                                  ;      ;
-; 92.74 MHz  ; 92.74 MHz       ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ;      ;
-; 106.71 MHz ; 106.71 MHz      ; CLOCK_50                                                                             ;      ;
-; 108.62 MHz ; 108.62 MHz      ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ;      ;
-; 144.22 MHz ; 144.22 MHz      ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ;      ;
-; 151.08 MHz ; 151.08 MHz      ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ;      ;
-; 401.45 MHz ; 401.45 MHz      ; Clock_Divider:get1Hz|clock_out                                                       ;      ;
+; 32.37 MHz  ; 32.37 MHz       ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ;      ;
+; 33.66 MHz  ; 33.66 MHz       ; altera_reserved_tck                                                                  ;      ;
+; 88.64 MHz  ; 88.64 MHz       ; CLOCK_50                                                                             ;      ;
+; 90.11 MHz  ; 90.11 MHz       ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ;      ;
+; 103.33 MHz ; 103.33 MHz      ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ;      ;
+; 135.39 MHz ; 135.39 MHz      ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ;      ;
+; 151.13 MHz ; 151.13 MHz      ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ;      ;
+; 171.73 MHz ; 171.73 MHz      ; Clock_Divider:get1Hz|clock_out                                                       ;      ;
 +------------+-----------------+--------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -182,14 +182,14 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------+--------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -7.458 ; -375.969      ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -6.809 ; -221.019      ;
-; CLOCK_50                                                                             ; -3.790 ; -32.887       ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.066  ; 0.000         ;
-; altera_reserved_tck                                                                  ; 10.300 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 18.990 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 32.381 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 36.509 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -7.509 ; -377.751      ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -7.057 ; -246.471      ;
+; CLOCK_50                                                                             ; -4.340 ; -94.094       ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.383  ; 0.000         ;
+; altera_reserved_tck                                                                  ; 5.144  ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 18.802 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 31.614 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 33.177 ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -198,14 +198,14 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------------+-------+---------------+
-; altera_reserved_tck                                                                  ; 0.117 ; 0.000         ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.141 ; 0.000         ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 0.219 ; 0.000         ;
-; CLOCK_50                                                                             ; 0.231 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0.290 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.314 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 0.860 ; 0.000         ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 0.876 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.158 ; 0.000         ;
+; CLOCK_50                                                                             ; 0.235 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0.270 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 0.275 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.326 ; 0.000         ;
+; altera_reserved_tck                                                                  ; 0.360 ; 0.000         ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 0.722 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 0.743 ; 0.000         ;
 +--------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -214,11 +214,11 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                 ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------+--------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -6.976 ; -20.722       ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; -3.842 ; -53.369       ;
-; CLOCK_50                                                              ; 12.694 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 18.193 ; 0.000         ;
-; altera_reserved_tck                                                   ; 18.489 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -6.801 ; -20.142       ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 2.696  ; 0.000         ;
+; CLOCK_50                                                              ; 11.466 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 17.781 ; 0.000         ;
+; altera_reserved_tck                                                   ; 17.976 ; 0.000         ;
 +-----------------------------------------------------------------------+--------+---------------+
 
 
@@ -227,11 +227,11 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                 ; Slack ; End Point TNS ;
 +-----------------------------------------------------------------------+-------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.481 ; 0.000         ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.556 ; 0.000         ;
-; CLOCK_50                                                              ; 0.706 ; 0.000         ;
-; altera_reserved_tck                                                   ; 0.900 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.955 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.416 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.519 ; 0.000         ;
+; CLOCK_50                                                              ; 0.682 ; 0.000         ;
+; altera_reserved_tck                                                   ; 0.892 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.904 ; 0.000         ;
 +-----------------------------------------------------------------------+-------+---------------+
 
 
@@ -242,14 +242,14 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                          ; 0.500  ; 0.000         ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                  ; 1.562  ; 0.000         ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.274  ; 0.000         ;
-; CLOCK_50                                                                             ; 8.877  ; 0.000         ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11.283 ; 0.000         ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 18.273 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 18.732 ; 0.000         ;
-; altera_reserved_tck                                                                  ; 18.863 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 18.916 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.151 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.281  ; 0.000         ;
+; CLOCK_50                                                                             ; 8.876  ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11.277 ; 0.000         ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 18.392 ; 0.000         ;
+; altera_reserved_tck                                                                  ; 18.766 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 18.893 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 18.903 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.158 ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -265,14 +265,14 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------+-----------------+--------------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                           ; Note ;
 +------------+-----------------+--------------------------------------------------------------------------------------+------+
-; 32.35 MHz  ; 32.35 MHz       ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ;      ;
-; 52.3 MHz   ; 52.3 MHz        ; altera_reserved_tck                                                                  ;      ;
-; 94.54 MHz  ; 94.54 MHz       ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ;      ;
-; 107.42 MHz ; 107.42 MHz      ; CLOCK_50                                                                             ;      ;
-; 111.99 MHz ; 111.99 MHz      ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ;      ;
-; 149.99 MHz ; 149.99 MHz      ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ;      ;
-; 156.23 MHz ; 156.23 MHz      ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ;      ;
-; 412.54 MHz ; 412.54 MHz      ; Clock_Divider:get1Hz|clock_out                                                       ;      ;
+; 32.96 MHz  ; 32.96 MHz       ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ;      ;
+; 34.78 MHz  ; 34.78 MHz       ; altera_reserved_tck                                                                  ;      ;
+; 90.11 MHz  ; 90.11 MHz       ; CLOCK_50                                                                             ;      ;
+; 92.14 MHz  ; 92.14 MHz       ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ;      ;
+; 107.19 MHz ; 107.19 MHz      ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ;      ;
+; 139.84 MHz ; 139.84 MHz      ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ;      ;
+; 154.7 MHz  ; 154.7 MHz       ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ;      ;
+; 178.16 MHz ; 178.16 MHz      ; Clock_Divider:get1Hz|clock_out                                                       ;      ;
 +------------+-----------------+--------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -282,14 +282,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------+--------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -6.867 ; -344.205      ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -6.859 ; -225.626      ;
-; CLOCK_50                                                                             ; -3.430 ; -28.756       ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.333  ; 0.000         ;
-; altera_reserved_tck                                                                  ; 10.440 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.008 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 32.599 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 36.576 ; 0.000         ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -7.114 ; -251.927      ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -6.991 ; -345.311      ;
+; CLOCK_50                                                                             ; -3.929 ; -81.619       ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.536  ; 0.000         ;
+; altera_reserved_tck                                                                  ; 5.625  ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 18.812 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 31.849 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 33.387 ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -298,14 +298,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------+--------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -0.024 ; -0.024        ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.063  ; 0.000         ;
-; altera_reserved_tck                                                                  ; 0.105  ; 0.000         ;
-; CLOCK_50                                                                             ; 0.156  ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.297  ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0.347  ; 0.000         ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 0.833  ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 0.861  ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -0.117 ; -0.325        ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.119  ; 0.000         ;
+; CLOCK_50                                                                             ; 0.220  ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.277  ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0.332  ; 0.000         ;
+; altera_reserved_tck                                                                  ; 0.374  ; 0.000         ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 0.712  ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 0.748  ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -314,11 +314,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                 ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------+--------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -6.383 ; -18.953       ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; -3.332 ; -46.278       ;
-; CLOCK_50                                                              ; 12.978 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 18.327 ; 0.000         ;
-; altera_reserved_tck                                                   ; 18.564 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -6.185 ; -18.306       ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 2.888  ; 0.000         ;
+; CLOCK_50                                                              ; 11.845 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 17.893 ; 0.000         ;
+; altera_reserved_tck                                                   ; 18.030 ; 0.000         ;
 +-----------------------------------------------------------------------+--------+---------------+
 
 
@@ -327,11 +327,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                 ; Slack ; End Point TNS ;
 +-----------------------------------------------------------------------+-------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.172 ; 0.000         ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.512 ; 0.000         ;
-; CLOCK_50                                                              ; 0.666 ; 0.000         ;
-; altera_reserved_tck                                                   ; 0.858 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.900 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.286 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.349 ; 0.000         ;
+; CLOCK_50                                                              ; 0.615 ; 0.000         ;
+; altera_reserved_tck                                                   ; 0.844 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.858 ; 0.000         ;
 +-----------------------------------------------------------------------+-------+---------------+
 
 
@@ -342,14 +342,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                          ; 0.500  ; 0.000         ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                  ; 1.562  ; 0.000         ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.258  ; 0.000         ;
-; CLOCK_50                                                                             ; 8.915  ; 0.000         ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11.258 ; 0.000         ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 18.282 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 18.778 ; 0.000         ;
-; altera_reserved_tck                                                                  ; 18.855 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 18.898 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.159 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.260  ; 0.000         ;
+; CLOCK_50                                                                             ; 8.910  ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11.261 ; 0.000         ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 18.385 ; 0.000         ;
+; altera_reserved_tck                                                                  ; 18.730 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 18.815 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 18.887 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.175 ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -365,14 +365,14 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------+--------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -5.643 ; -277.805      ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -3.387 ; -105.427      ;
-; CLOCK_50                                                                             ; -2.718 ; -25.972       ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.817  ; 0.000         ;
-; altera_reserved_tck                                                                  ; 12.357 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.427 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 34.658 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 37.226 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -5.718 ; -279.919      ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -3.492 ; -118.553      ;
+; CLOCK_50                                                                             ; -2.971 ; -69.994       ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.957  ; 0.000         ;
+; altera_reserved_tck                                                                  ; 8.776  ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.332 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 34.150 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 34.880 ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -381,14 +381,14 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------------+-------+---------------+
-; altera_reserved_tck                                                                  ; 0.027 ; 0.000         ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.109 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0.126 ; 0.000         ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 0.128 ; 0.000         ;
-; CLOCK_50                                                                             ; 0.133 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.107 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0.119 ; 0.000         ;
+; CLOCK_50                                                                             ; 0.137 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 0.172 ; 0.000         ;
+; altera_reserved_tck                                                                  ; 0.177 ; 0.000         ;
 ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.181 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 0.388 ; 0.000         ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 0.412 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 0.326 ; 0.000         ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 0.367 ; 0.000         ;
 +--------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -397,11 +397,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                 ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------+--------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.004 ; -14.850       ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; -0.782 ; -10.683       ;
-; CLOCK_50                                                              ; 15.055 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 18.840 ; 0.000         ;
-; altera_reserved_tck                                                   ; 19.445 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.666 ; -13.853       ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 4.347  ; 0.000         ;
+; CLOCK_50                                                              ; 13.999 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 18.598 ; 0.000         ;
+; altera_reserved_tck                                                   ; 19.204 ; 0.000         ;
 +-----------------------------------------------------------------------+--------+---------------+
 
 
@@ -410,11 +410,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                 ; Slack ; End Point TNS ;
 +-----------------------------------------------------------------------+-------+---------------+
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.299 ; 0.000         ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.299 ; 0.000         ;
-; CLOCK_50                                                              ; 0.391 ; 0.000         ;
-; altera_reserved_tck                                                   ; 0.474 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.536 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.297 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.301 ; 0.000         ;
+; CLOCK_50                                                              ; 0.378 ; 0.000         ;
+; altera_reserved_tck                                                   ; 0.485 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.502 ; 0.000         ;
 +-----------------------------------------------------------------------+-------+---------------+
 
 
@@ -425,14 +425,14 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                          ; 0.500  ; 0.000         ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                  ; 1.562  ; 0.000         ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.389  ; 0.000         ;
-; CLOCK_50                                                                             ; 8.481  ; 0.000         ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11.387 ; 0.000         ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 18.261 ; 0.000         ;
-; altera_reserved_tck                                                                  ; 18.776 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 19.093 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 19.150 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.525 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.391  ; 0.000         ;
+; CLOCK_50                                                                             ; 8.477  ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11.390 ; 0.000         ;
+; altera_reserved_tck                                                                  ; 18.309 ; 0.000         ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 18.336 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 19.116 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 19.143 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.528 ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -448,31 +448,31 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------+--------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -4.563 ; -221.795      ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -3.282 ; -102.766      ;
-; CLOCK_50                                                                             ; -2.196 ; -19.895       ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 3.197  ; 0.000         ;
-; altera_reserved_tck                                                                  ; 12.535 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.461 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 35.127 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 37.379 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -4.677 ; -223.585      ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -3.395 ; -115.530      ;
+; CLOCK_50                                                                             ; -2.296 ; -52.614       ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 3.402  ; 0.000         ;
+; altera_reserved_tck                                                                  ; 9.784  ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.363 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 34.666 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 35.325 ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Fast 1100mV 0C Model Hold Summary                                                                            ;
-+--------------------------------------------------------------------------------------+-------+---------------+
-; Clock                                                                                ; Slack ; End Point TNS ;
-+--------------------------------------------------------------------------------------+-------+---------------+
-; altera_reserved_tck                                                                  ; 0.013 ; 0.000         ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.049 ; 0.000         ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 0.117 ; 0.000         ;
-; CLOCK_50                                                                             ; 0.121 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0.128 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.164 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 0.353 ; 0.000         ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 0.353 ; 0.000         ;
-+--------------------------------------------------------------------------------------+-------+---------------+
++---------------------------------------------------------------------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary                                                                             ;
++--------------------------------------------------------------------------------------+--------+---------------+
+; Clock                                                                                ; Slack  ; End Point TNS ;
++--------------------------------------------------------------------------------------+--------+---------------+
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -0.050 ; -0.137        ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.072  ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0.119  ; 0.000         ;
+; CLOCK_50                                                                             ; 0.125  ; 0.000         ;
+; altera_reserved_tck                                                                  ; 0.168  ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.172  ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 0.299  ; 0.000         ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 0.333  ; 0.000         ;
++--------------------------------------------------------------------------------------+--------+---------------+
 
 
 +------------------------------------------------------------------------------------------------+
@@ -480,11 +480,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                 ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------------------+--------+---------------+
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.982 ; -11.796       ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.262  ; 0.000         ;
-; CLOCK_50                                                              ; 15.642 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 18.990 ; 0.000         ;
-; altera_reserved_tck                                                   ; 19.601 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.700 ; -10.987       ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 4.576  ; 0.000         ;
+; CLOCK_50                                                              ; 14.746 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 18.767 ; 0.000         ;
+; altera_reserved_tck                                                   ; 19.426 ; 0.000         ;
 +-----------------------------------------------------------------------+--------+---------------+
 
 
@@ -493,11 +493,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                 ; Slack ; End Point TNS ;
 +-----------------------------------------------------------------------+-------+---------------+
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.270 ; 0.000         ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.270 ; 0.000         ;
-; CLOCK_50                                                              ; 0.358 ; 0.000         ;
-; altera_reserved_tck                                                   ; 0.419 ; 0.000         ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.489 ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.241 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.254 ; 0.000         ;
+; CLOCK_50                                                              ; 0.321 ; 0.000         ;
+; altera_reserved_tck                                                   ; 0.440 ; 0.000         ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 0.460 ; 0.000         ;
 +-----------------------------------------------------------------------+-------+---------------+
 
 
@@ -508,13 +508,13 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------------+--------+---------------+
 ; U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                          ; 0.500  ; 0.000         ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                  ; 1.562  ; 0.000         ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.387  ; 0.000         ;
-; CLOCK_50                                                                             ; 8.435  ; 0.000         ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11.389 ; 0.000         ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 18.309 ; 0.000         ;
-; altera_reserved_tck                                                                  ; 18.763 ; 0.000         ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 19.112 ; 0.000         ;
-; Clock_Divider:get1Hz|clock_out                                                       ; 19.148 ; 0.000         ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 2.392  ; 0.000         ;
+; CLOCK_50                                                                             ; 8.433  ; 0.000         ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11.388 ; 0.000         ;
+; altera_reserved_tck                                                                  ; 18.248 ; 0.000         ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 18.370 ; 0.000         ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 19.139 ; 0.000         ;
+; Clock_Divider:get1Hz|clock_out                                                       ; 19.142 ; 0.000         ;
 ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 19.531 ; 0.000         ;
 +--------------------------------------------------------------------------------------+--------+---------------+
 
@@ -531,26 +531,26 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +---------------------------------------------------------------------------------------+----------+--------+----------+---------+---------------------+
 ; Clock                                                                                 ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +---------------------------------------------------------------------------------------+----------+--------+----------+---------+---------------------+
-; Worst-case Slack                                                                      ; -7.458   ; -0.024 ; -6.976   ; 0.172   ; 0.500               ;
-;  CLOCK_50                                                                             ; -3.790   ; 0.121  ; 12.694   ; 0.358   ; 8.435               ;
-;  Clock_Divider:get1Hz|clock_out                                                       ; 36.509   ; 0.353  ; N/A      ; N/A     ; 18.898              ;
-;  Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -6.859   ; 0.353  ; N/A      ; N/A     ; 18.261              ;
+; Worst-case Slack                                                                      ; -7.509   ; -0.117 ; -6.801   ; 0.241   ; 0.500               ;
+;  CLOCK_50                                                                             ; -4.340   ; 0.125  ; 11.466   ; 0.321   ; 8.433               ;
+;  Clock_Divider:get1Hz|clock_out                                                       ; 33.177   ; 0.299  ; N/A      ; N/A     ; 18.887              ;
+;  Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -7.114   ; 0.333  ; N/A      ; N/A     ; 18.336              ;
 ;  U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                          ; N/A      ; N/A    ; N/A      ; N/A     ; 0.500               ;
-;  U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.066    ; 0.049  ; -3.842   ; 0.270   ; 2.258               ;
-;  U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 18.990   ; 0.164  ; 18.193   ; 0.489   ; 19.151              ;
+;  U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.383    ; 0.072  ; 2.696    ; 0.254   ; 2.260               ;
+;  U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 18.802   ; 0.172  ; 17.781   ; 0.460   ; 19.158              ;
 ;  U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                  ; N/A      ; N/A    ; N/A      ; N/A     ; 1.562               ;
-;  U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -7.458   ; -0.024 ; -6.976   ; 0.172   ; 11.258              ;
-;  altera_reserved_tck                                                                  ; 10.300   ; 0.013  ; 18.489   ; 0.419   ; 18.763              ;
-;  hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 32.381   ; 0.126  ; N/A      ; N/A     ; 18.732              ;
-; Design-wide TNS                                                                       ; -629.875 ; -0.024 ; -74.091  ; 0.0     ; 0.0                 ;
-;  CLOCK_50                                                                             ; -32.887  ; 0.000  ; 0.000    ; 0.000   ; 0.000               ;
+;  U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -7.509   ; -0.117 ; -6.801   ; 0.241   ; 11.261              ;
+;  altera_reserved_tck                                                                  ; 5.144    ; 0.168  ; 17.976   ; 0.440   ; 18.248              ;
+;  hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 31.614   ; 0.119  ; N/A      ; N/A     ; 18.815              ;
+; Design-wide TNS                                                                       ; -718.316 ; -0.325 ; -20.142  ; 0.0     ; 0.0                 ;
+;  CLOCK_50                                                                             ; -94.094  ; 0.000  ; 0.000    ; 0.000   ; 0.000               ;
 ;  Clock_Divider:get1Hz|clock_out                                                       ; 0.000    ; 0.000  ; N/A      ; N/A     ; 0.000               ;
-;  Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -225.626 ; 0.000  ; N/A      ; N/A     ; 0.000               ;
+;  Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; -251.927 ; 0.000  ; N/A      ; N/A     ; 0.000               ;
 ;  U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                          ; N/A      ; N/A    ; N/A      ; N/A     ; 0.000               ;
-;  U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.000    ; 0.000  ; -53.369  ; 0.000   ; 0.000               ;
+;  U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.000    ; 0.000  ; 0.000    ; 0.000   ; 0.000               ;
 ;  U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 0.000    ; 0.000  ; 0.000    ; 0.000   ; 0.000               ;
 ;  U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                  ; N/A      ; N/A    ; N/A      ; N/A     ; 0.000               ;
-;  U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -375.969 ; -0.024 ; -20.722  ; 0.000   ; 0.000               ;
+;  U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; -377.751 ; -0.325 ; -20.142  ; 0.000   ; 0.000               ;
 ;  altera_reserved_tck                                                                  ; 0.000    ; 0.000  ; 0.000    ; 0.000   ; 0.000               ;
 ;  hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0.000    ; 0.000  ; N/A      ; N/A     ; 0.000               ;
 +---------------------------------------------------------------------------------------+----------+--------+----------+---------+---------------------+
@@ -562,6 +562,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; Pin                 ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
 +---------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 ; DRAM_CLK            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_HS              ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_VS              ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[0]            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[1]            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[2]            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
@@ -587,9 +590,6 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_R[5]            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_R[6]            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_R[7]            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_HS              ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_VS              ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DRAM_ADDR[0]        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DRAM_ADDR[1]        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DRAM_ADDR[2]        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
@@ -919,6 +919,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; Pin                 ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; DRAM_CLK            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
+; VGA_HS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_VS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[0]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[1]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[2]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
@@ -944,9 +947,6 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_R[5]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[6]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[7]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
-; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
-; VGA_HS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_VS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
 ; DRAM_ADDR[0]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; DRAM_ADDR[1]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
 ; DRAM_ADDR[2]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
@@ -1137,6 +1137,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; Pin                 ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; DRAM_CLK            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
+; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
+; VGA_HS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
+; VGA_VS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_B[0]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[1]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_B[2]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
@@ -1162,9 +1165,6 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_R[5]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_R[6]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_R[7]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
-; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
-; VGA_HS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
-; VGA_VS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
 ; DRAM_ADDR[0]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; DRAM_ADDR[1]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
 ; DRAM_ADDR[2]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
@@ -1355,6 +1355,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; Pin                 ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; DRAM_CLK            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_HS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_VS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[0]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[1]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[2]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
@@ -1380,9 +1383,6 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_R[5]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_R[6]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[7]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
-; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_HS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_VS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
 ; DRAM_ADDR[0]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; DRAM_ADDR[1]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; DRAM_ADDR[2]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
@@ -1573,6 +1573,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; Pin                 ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; DRAM_CLK            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
+; VGA_HS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_VS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[0]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[1]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[2]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
@@ -1598,9 +1601,6 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_R[5]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[6]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[7]            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
-; VGA_BLANK_N         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
-; VGA_HS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_VS              ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
 ; DRAM_ADDR[0]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; DRAM_ADDR[1]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
 ; DRAM_ADDR[2]        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
@@ -1790,31 +1790,31 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------+------------+----------+----------+
 ; From Clock                                                                           ; To Clock                                                                             ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------+------------+----------+----------+
-; altera_reserved_tck                                                                  ; altera_reserved_tck                                                                  ; 1860       ; 77         ; 66       ; 4        ;
+; altera_reserved_tck                                                                  ; altera_reserved_tck                                                                  ; 10306      ; 103        ; 122      ; 3        ;
 ; CLOCK_50                                                                             ; altera_reserved_tck                                                                  ; false path ; 0          ; 0        ; 0        ;
 ; altera_reserved_tck                                                                  ; CLOCK_50                                                                             ; false path ; false path ; 0        ; 0        ;
-; CLOCK_50                                                                             ; CLOCK_50                                                                             ; 204636     ; 7          ; 0        ; 1        ;
-; Clock_Divider:get1Hz|clock_out                                                       ; CLOCK_50                                                                             ; 11         ; 3          ; 0        ; 0        ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; CLOCK_50                                                                             ; 0          ; 0          ; 1        ; 1        ;
+; CLOCK_50                                                                             ; CLOCK_50                                                                             ; 206892     ; 12         ; 0        ; 1        ;
+; Clock_Divider:get1Hz|clock_out                                                       ; CLOCK_50                                                                             ; 34         ; 4          ; 0        ; 0        ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; CLOCK_50                                                                             ; 12         ; 0          ; 1        ; 1        ;
 ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; CLOCK_50                                                                             ; 201        ; 0          ; 0        ; 0        ;
 ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; CLOCK_50                                                                             ; 20         ; 0          ; 0        ; 0        ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; CLOCK_50                                                                             ; 23         ; 0          ; 0        ; 0        ;
-; Clock_Divider:get1Hz|clock_out                                                       ; Clock_Divider:get1Hz|clock_out                                                       ; 7          ; 0          ; 0        ; 0        ;
-; CLOCK_50                                                                             ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 89         ; 0          ; 0        ; 0        ;
+; Clock_Divider:get1Hz|clock_out                                                       ; Clock_Divider:get1Hz|clock_out                                                       ; 6          ; 0          ; 0        ; 0        ;
+; CLOCK_50                                                                             ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 94         ; 0          ; 0        ; 0        ;
 ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 265        ; 0          ; 0        ; 0        ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 21         ; 0          ; 0        ; 0        ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0          ; 0          ; 0        ; 215      ;
-; CLOCK_50                                                                             ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 264        ; 0          ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 103694     ; 0          ; 0        ; 0        ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0          ; 0          ; 0        ; 226      ;
+; CLOCK_50                                                                             ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 266        ; 0          ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 83018      ; 0          ; 0        ; 0        ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 11         ; 0          ; 0        ; 0        ;
-; CLOCK_50                                                                             ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 8          ; 0          ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 300268     ; 0          ; 1        ; 0        ;
-; CLOCK_50                                                                             ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 8          ; 0          ; 39       ; 0        ;
+; CLOCK_50                                                                             ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 7          ; 0          ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 302081     ; 0          ; 1        ; 0        ;
+; CLOCK_50                                                                             ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 7          ; 0          ; 39       ; 0        ;
 ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 110        ; 0          ; 5550     ; 0        ;
 ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 0          ; 122        ; 0        ; 10058    ;
 ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11         ; 0          ; 0        ; 0        ;
 ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 6          ; 0          ; 0        ; 0        ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 342451     ; 248        ; 33849    ; 5981     ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 327327     ; 238        ; 33848    ; 5979     ;
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------+------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1824,62 +1824,64 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------+------------+----------+----------+
 ; From Clock                                                                           ; To Clock                                                                             ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------+------------+----------+----------+
-; altera_reserved_tck                                                                  ; altera_reserved_tck                                                                  ; 1860       ; 77         ; 66       ; 4        ;
+; altera_reserved_tck                                                                  ; altera_reserved_tck                                                                  ; 10306      ; 103        ; 122      ; 3        ;
 ; CLOCK_50                                                                             ; altera_reserved_tck                                                                  ; false path ; 0          ; 0        ; 0        ;
 ; altera_reserved_tck                                                                  ; CLOCK_50                                                                             ; false path ; false path ; 0        ; 0        ;
-; CLOCK_50                                                                             ; CLOCK_50                                                                             ; 204636     ; 7          ; 0        ; 1        ;
-; Clock_Divider:get1Hz|clock_out                                                       ; CLOCK_50                                                                             ; 11         ; 3          ; 0        ; 0        ;
-; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; CLOCK_50                                                                             ; 0          ; 0          ; 1        ; 1        ;
+; CLOCK_50                                                                             ; CLOCK_50                                                                             ; 206892     ; 12         ; 0        ; 1        ;
+; Clock_Divider:get1Hz|clock_out                                                       ; CLOCK_50                                                                             ; 34         ; 4          ; 0        ; 0        ;
+; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; CLOCK_50                                                                             ; 12         ; 0          ; 1        ; 1        ;
 ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; CLOCK_50                                                                             ; 201        ; 0          ; 0        ; 0        ;
 ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; CLOCK_50                                                                             ; 20         ; 0          ; 0        ; 0        ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; CLOCK_50                                                                             ; 23         ; 0          ; 0        ; 0        ;
-; Clock_Divider:get1Hz|clock_out                                                       ; Clock_Divider:get1Hz|clock_out                                                       ; 7          ; 0          ; 0        ; 0        ;
-; CLOCK_50                                                                             ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 89         ; 0          ; 0        ; 0        ;
+; Clock_Divider:get1Hz|clock_out                                                       ; Clock_Divider:get1Hz|clock_out                                                       ; 6          ; 0          ; 0        ; 0        ;
+; CLOCK_50                                                                             ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 94         ; 0          ; 0        ; 0        ;
 ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 265        ; 0          ; 0        ; 0        ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; 21         ; 0          ; 0        ; 0        ;
-; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0          ; 0          ; 0        ; 215      ;
-; CLOCK_50                                                                             ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 264        ; 0          ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 103694     ; 0          ; 0        ; 0        ;
+; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; 0          ; 0          ; 0        ; 226      ;
+; CLOCK_50                                                                             ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 266        ; 0          ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 83018      ; 0          ; 0        ; 0        ;
 ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 11         ; 0          ; 0        ; 0        ;
-; CLOCK_50                                                                             ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 8          ; 0          ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 300268     ; 0          ; 1        ; 0        ;
-; CLOCK_50                                                                             ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 8          ; 0          ; 39       ; 0        ;
+; CLOCK_50                                                                             ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 7          ; 0          ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; 302081     ; 0          ; 1        ; 0        ;
+; CLOCK_50                                                                             ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 7          ; 0          ; 39       ; 0        ;
 ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 110        ; 0          ; 5550     ; 0        ;
 ; hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy                        ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 0          ; 122        ; 0        ; 10058    ;
 ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 11         ; 0          ; 0        ; 0        ;
 ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                        ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 6          ; 0          ; 0        ; 0        ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 342451     ; 248        ; 33849    ; 5981     ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                ; 327327     ; 238        ; 33848    ; 5979     ;
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------+------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Recovery Transfers                                                                                                                                                                        ;
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------+----------+----------+----------+----------+
-; From Clock                                                            ; To Clock                                                              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------+----------+----------+----------+----------+
-; altera_reserved_tck                                                   ; altera_reserved_tck                                                   ; 102      ; 0        ; 2        ; 0        ;
-; CLOCK_50                                                              ; CLOCK_50                                                              ; 3190     ; 0        ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 3122     ; 0        ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 115      ; 43       ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 4        ; 0        ; 0        ; 0        ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 346      ; 0        ; 0        ; 0        ;
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                                                                                                                          ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------+----------+----------+----------+
+; From Clock                                                            ; To Clock                                                              ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------+----------+----------+----------+
+; altera_reserved_tck                                                   ; altera_reserved_tck                                                   ; 834        ; 0        ; 2        ; 0        ;
+; altera_reserved_tck                                                   ; CLOCK_50                                                              ; false path ; 0        ; 0        ; 0        ;
+; CLOCK_50                                                              ; CLOCK_50                                                              ; 3184       ; 0        ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 3179       ; 0        ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 116        ; 36       ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 4          ; 0        ; 0        ; 0        ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 339        ; 0        ; 0        ; 0        ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removal Transfers                                                                                                                                                                         ;
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------+----------+----------+----------+----------+
-; From Clock                                                            ; To Clock                                                              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------+----------+----------+----------+----------+
-; altera_reserved_tck                                                   ; altera_reserved_tck                                                   ; 102      ; 0        ; 2        ; 0        ;
-; CLOCK_50                                                              ; CLOCK_50                                                              ; 3190     ; 0        ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 3122     ; 0        ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 115      ; 43       ; 0        ; 0        ;
-; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 4        ; 0        ; 0        ; 0        ;
-; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 346      ; 0        ; 0        ; 0        ;
-+-----------------------------------------------------------------------+-----------------------------------------------------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                                                                                                                           ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------+----------+----------+----------+
+; From Clock                                                            ; To Clock                                                              ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------+----------+----------+----------+
+; altera_reserved_tck                                                   ; altera_reserved_tck                                                   ; 834        ; 0        ; 2        ; 0        ;
+; altera_reserved_tck                                                   ; CLOCK_50                                                              ; false path ; 0        ; 0        ; 0        ;
+; CLOCK_50                                                              ; CLOCK_50                                                              ; 3184       ; 0        ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; 3179       ; 0        ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk         ; 116        ; 36       ; 0        ; 0        ;
+; U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk         ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 4          ; 0        ; 0        ; 0        ;
+; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 339        ; 0        ; 0        ; 0        ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -2137,7 +2139,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
-    Info: Processing started: Mon Jun 24 14:42:28 2024
+    Info: Processing started: Mon Jun 24 15:14:36 2024
 Info: Command: quartus_sta dds_and_nios_lab -c dds_and_nios_lab
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -2529,58 +2531,58 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -7.458
+Info (332146): Worst-case setup slack is -7.509
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.458            -375.969 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -6.809            -221.019 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-    Info (332119):    -3.790             -32.887 CLOCK_50 
-    Info (332119):     0.066               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    10.300               0.000 altera_reserved_tck 
-    Info (332119):    18.990               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    32.381               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):    36.509               0.000 Clock_Divider:get1Hz|clock_out 
-Info (332146): Worst-case hold slack is 0.117
+    Info (332119):    -7.509            -377.751 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -7.057            -246.471 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):    -4.340             -94.094 CLOCK_50 
+    Info (332119):     0.383               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     5.144               0.000 altera_reserved_tck 
+    Info (332119):    18.802               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    31.614               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):    33.177               0.000 Clock_Divider:get1Hz|clock_out 
+Info (332146): Worst-case hold slack is 0.158
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.117               0.000 altera_reserved_tck 
-    Info (332119):     0.141               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.219               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.231               0.000 CLOCK_50 
-    Info (332119):     0.290               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):     0.314               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.860               0.000 Clock_Divider:get1Hz|clock_out 
-    Info (332119):     0.876               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-Info (332146): Worst-case recovery slack is -6.976
+    Info (332119):     0.158               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.235               0.000 CLOCK_50 
+    Info (332119):     0.270               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):     0.275               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.326               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.360               0.000 altera_reserved_tck 
+    Info (332119):     0.722               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):     0.743               0.000 Clock_Divider:get1Hz|clock_out 
+Info (332146): Worst-case recovery slack is -6.801
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.976             -20.722 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -3.842             -53.369 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    12.694               0.000 CLOCK_50 
-    Info (332119):    18.193               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    18.489               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.481
+    Info (332119):    -6.801             -20.142 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     2.696               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    11.466               0.000 CLOCK_50 
+    Info (332119):    17.781               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    17.976               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.416
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.481               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.556               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.706               0.000 CLOCK_50 
-    Info (332119):     0.900               0.000 altera_reserved_tck 
-    Info (332119):     0.955               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.416               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.519               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.682               0.000 CLOCK_50 
+    Info (332119):     0.892               0.000 altera_reserved_tck 
+    Info (332119):     0.904               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.500
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.500               0.000 U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.562               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     2.274               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     8.877               0.000 CLOCK_50 
-    Info (332119):    11.283               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    18.273               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-    Info (332119):    18.732               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):    18.863               0.000 altera_reserved_tck 
-    Info (332119):    18.916               0.000 Clock_Divider:get1Hz|clock_out 
-    Info (332119):    19.151               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332114): Report Metastability: Found 125 synchronizer chains.
+    Info (332119):     2.281               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     8.876               0.000 CLOCK_50 
+    Info (332119):    11.277               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.392               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):    18.766               0.000 altera_reserved_tck 
+    Info (332119):    18.893               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):    18.903               0.000 Clock_Divider:get1Hz|clock_out 
+    Info (332119):    19.158               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332114): Report Metastability: Found 153 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
@@ -2598,58 +2600,58 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.867
+Info (332146): Worst-case setup slack is -7.114
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.867            -344.205 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -6.859            -225.626 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-    Info (332119):    -3.430             -28.756 CLOCK_50 
-    Info (332119):     0.333               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    10.440               0.000 altera_reserved_tck 
-    Info (332119):    19.008               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    32.599               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):    36.576               0.000 Clock_Divider:get1Hz|clock_out 
-Info (332146): Worst-case hold slack is -0.024
+    Info (332119):    -7.114            -251.927 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):    -6.991            -345.311 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -3.929             -81.619 CLOCK_50 
+    Info (332119):     0.536               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     5.625               0.000 altera_reserved_tck 
+    Info (332119):    18.812               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    31.849               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):    33.387               0.000 Clock_Divider:get1Hz|clock_out 
+Info (332146): Worst-case hold slack is -0.117
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.024              -0.024 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.063               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.105               0.000 altera_reserved_tck 
-    Info (332119):     0.156               0.000 CLOCK_50 
-    Info (332119):     0.297               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.347               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):     0.833               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-    Info (332119):     0.861               0.000 Clock_Divider:get1Hz|clock_out 
-Info (332146): Worst-case recovery slack is -6.383
+    Info (332119):    -0.117              -0.325 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.119               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.220               0.000 CLOCK_50 
+    Info (332119):     0.277               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.332               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):     0.374               0.000 altera_reserved_tck 
+    Info (332119):     0.712               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):     0.748               0.000 Clock_Divider:get1Hz|clock_out 
+Info (332146): Worst-case recovery slack is -6.185
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.383             -18.953 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -3.332             -46.278 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    12.978               0.000 CLOCK_50 
-    Info (332119):    18.327               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    18.564               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.172
+    Info (332119):    -6.185             -18.306 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     2.888               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    11.845               0.000 CLOCK_50 
+    Info (332119):    17.893               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.030               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.286
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.172               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.512               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.666               0.000 CLOCK_50 
-    Info (332119):     0.858               0.000 altera_reserved_tck 
-    Info (332119):     0.900               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.286               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.349               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.615               0.000 CLOCK_50 
+    Info (332119):     0.844               0.000 altera_reserved_tck 
+    Info (332119):     0.858               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.500
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.500               0.000 U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.562               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     2.258               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     8.915               0.000 CLOCK_50 
-    Info (332119):    11.258               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    18.282               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-    Info (332119):    18.778               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):    18.855               0.000 altera_reserved_tck 
-    Info (332119):    18.898               0.000 Clock_Divider:get1Hz|clock_out 
-    Info (332119):    19.159               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332114): Report Metastability: Found 125 synchronizer chains.
+    Info (332119):     2.260               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     8.910               0.000 CLOCK_50 
+    Info (332119):    11.261               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.385               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):    18.730               0.000 altera_reserved_tck 
+    Info (332119):    18.815               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):    18.887               0.000 Clock_Divider:get1Hz|clock_out 
+    Info (332119):    19.175               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332114): Report Metastability: Found 153 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
@@ -2667,58 +2669,58 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.643
+Info (332146): Worst-case setup slack is -5.718
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.643            -277.805 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -3.387            -105.427 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-    Info (332119):    -2.718             -25.972 CLOCK_50 
-    Info (332119):     2.817               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    12.357               0.000 altera_reserved_tck 
-    Info (332119):    19.427               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    34.658               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):    37.226               0.000 Clock_Divider:get1Hz|clock_out 
-Info (332146): Worst-case hold slack is 0.027
+    Info (332119):    -5.718            -279.919 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -3.492            -118.553 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):    -2.971             -69.994 CLOCK_50 
+    Info (332119):     2.957               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     8.776               0.000 altera_reserved_tck 
+    Info (332119):    19.332               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    34.150               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):    34.880               0.000 Clock_Divider:get1Hz|clock_out 
+Info (332146): Worst-case hold slack is 0.107
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.027               0.000 altera_reserved_tck 
-    Info (332119):     0.109               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.126               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):     0.128               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.133               0.000 CLOCK_50 
+    Info (332119):     0.107               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.119               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):     0.137               0.000 CLOCK_50 
+    Info (332119):     0.172               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.177               0.000 altera_reserved_tck 
     Info (332119):     0.181               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.388               0.000 Clock_Divider:get1Hz|clock_out 
-    Info (332119):     0.412               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-Info (332146): Worst-case recovery slack is -5.004
+    Info (332119):     0.326               0.000 Clock_Divider:get1Hz|clock_out 
+    Info (332119):     0.367               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+Info (332146): Worst-case recovery slack is -4.666
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.004             -14.850 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -0.782             -10.683 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    15.055               0.000 CLOCK_50 
-    Info (332119):    18.840               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    19.445               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.299
+    Info (332119):    -4.666             -13.853 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     4.347               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    13.999               0.000 CLOCK_50 
+    Info (332119):    18.598               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    19.204               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.297
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.299               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.299               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.391               0.000 CLOCK_50 
-    Info (332119):     0.474               0.000 altera_reserved_tck 
-    Info (332119):     0.536               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.297               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.301               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.378               0.000 CLOCK_50 
+    Info (332119):     0.485               0.000 altera_reserved_tck 
+    Info (332119):     0.502               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.500
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.500               0.000 U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.562               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     2.389               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     8.481               0.000 CLOCK_50 
-    Info (332119):    11.387               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    18.261               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-    Info (332119):    18.776               0.000 altera_reserved_tck 
-    Info (332119):    19.093               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):    19.150               0.000 Clock_Divider:get1Hz|clock_out 
-    Info (332119):    19.525               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332114): Report Metastability: Found 125 synchronizer chains.
+    Info (332119):     2.391               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     8.477               0.000 CLOCK_50 
+    Info (332119):    11.390               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.309               0.000 altera_reserved_tck 
+    Info (332119):    18.336               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):    19.116               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):    19.143               0.000 Clock_Divider:get1Hz|clock_out 
+    Info (332119):    19.528               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332114): Report Metastability: Found 153 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
@@ -2734,65 +2736,65 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.563
+Info (332146): Worst-case setup slack is -4.677
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.563            -221.795 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -3.282            -102.766 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-    Info (332119):    -2.196             -19.895 CLOCK_50 
-    Info (332119):     3.197               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    12.535               0.000 altera_reserved_tck 
-    Info (332119):    19.461               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    35.127               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):    37.379               0.000 Clock_Divider:get1Hz|clock_out 
-Info (332146): Worst-case hold slack is 0.013
+    Info (332119):    -4.677            -223.585 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -3.395            -115.530 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):    -2.296             -52.614 CLOCK_50 
+    Info (332119):     3.402               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.784               0.000 altera_reserved_tck 
+    Info (332119):    19.363               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    34.666               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):    35.325               0.000 Clock_Divider:get1Hz|clock_out 
+Info (332146): Worst-case hold slack is -0.050
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.013               0.000 altera_reserved_tck 
-    Info (332119):     0.049               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.117               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.121               0.000 CLOCK_50 
-    Info (332119):     0.128               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):     0.164               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.353               0.000 Clock_Divider:get1Hz|clock_out 
-    Info (332119):     0.353               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-Info (332146): Worst-case recovery slack is -3.982
+    Info (332119):    -0.050              -0.137 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.072               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.119               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):     0.125               0.000 CLOCK_50 
+    Info (332119):     0.168               0.000 altera_reserved_tck 
+    Info (332119):     0.172               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.299               0.000 Clock_Divider:get1Hz|clock_out 
+    Info (332119):     0.333               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+Info (332146): Worst-case recovery slack is -3.700
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.982             -11.796 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.262               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    15.642               0.000 CLOCK_50 
-    Info (332119):    18.990               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    19.601               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.270
+    Info (332119):    -3.700             -10.987 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     4.576               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    14.746               0.000 CLOCK_50 
+    Info (332119):    18.767               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    19.426               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.241
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.270               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.270               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.358               0.000 CLOCK_50 
-    Info (332119):     0.419               0.000 altera_reserved_tck 
-    Info (332119):     0.489               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.241               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.254               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.321               0.000 CLOCK_50 
+    Info (332119):     0.440               0.000 altera_reserved_tck 
+    Info (332119):     0.460               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.500
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.500               0.000 U0|pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.562               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     2.387               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     8.435               0.000 CLOCK_50 
-    Info (332119):    11.389               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    18.309               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
-    Info (332119):    18.763               0.000 altera_reserved_tck 
-    Info (332119):    19.112               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
-    Info (332119):    19.148               0.000 Clock_Divider:get1Hz|clock_out 
+    Info (332119):     2.392               0.000 U0|pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     8.433               0.000 CLOCK_50 
+    Info (332119):    11.388               0.000 U0|vga|vga_clk|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.248               0.000 altera_reserved_tck 
+    Info (332119):    18.370               0.000 Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg 
+    Info (332119):    19.139               0.000 hack_ltm_sincronization:hack_ltm_sincronization_inst|line_rdy 
+    Info (332119):    19.142               0.000 Clock_Divider:get1Hz|clock_out 
     Info (332119):    19.531               0.000 U0|pll|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332114): Report Metastability: Found 125 synchronizer chains.
+Info (332114): Report Metastability: Found 153 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 112 warnings
-    Info: Peak virtual memory: 5553 megabytes
-    Info: Processing ended: Mon Jun 24 14:42:42 2024
+    Info: Peak virtual memory: 5575 megabytes
+    Info: Processing ended: Mon Jun 24 15:14:50 2024
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:22
 
 
